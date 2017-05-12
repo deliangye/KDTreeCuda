@@ -168,8 +168,6 @@ namespace flann
 		__device__
 		void getNeighbors(int index_)
 		{
-
-			printf("SehrSeltsam\n");
 			graphic::KNNResultSet<DistanceType> resultset(knn);
 			
 			graphic::Heap<Branch<DistanceType>, 0> heap(trees*knn*(int)(logf(size) / logf(2)));

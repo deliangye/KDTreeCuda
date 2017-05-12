@@ -83,7 +83,7 @@ int main(int argc, char* argv[]) {
 
 	// allocate indices- and dists-matrices 
 	int nn = 1000;
-	int querynumber = 1;// pointcloudflann.rows;
+	int querynumber = 32;// pointcloudflann.rows;
 	
 	flann::Matrix<size_t> indices(new size_t[querynumber*nn], querynumber, nn);
 	flann::Matrix<float> dists(new float[querynumber*nn], querynumber, nn);
