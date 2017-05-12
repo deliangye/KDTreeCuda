@@ -124,9 +124,6 @@ int main(int argc, char* argv[]) {
 		int g = utils::rand<int>(255, 0);
 		int b = utils::rand<int>(255, 0);
 		for (int j = 0; j < indices.cols; j++) {
-
-			std::cout << indices[i][j]  << " ";
-
 			pointcloud.colors[indices[i][j]][0] = r;
 			pointcloud.colors[indices[i][j]][1] = g;
 			pointcloud.colors[indices[i][j]][2] = b;
